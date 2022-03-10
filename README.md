@@ -45,7 +45,7 @@ Edit the file, change the `vaxiin_server_url` (if needed), add values for (`uid`
 ```
 docker run -d -v $(pwd):/db -v $(pwd)/config.yaml:/etc/vaxiin-agent-config/config.yaml rebooto/vaxiin-agent
 ```
-_Additional information about the available configration can be found in the [docs](https://docs.vaxiin.io/configuration/agent)._
+_Additional information about the available configuration can be found in the [docs](https://docs.vaxiin.io/configuration/agent)._
 
 ## Builiding
 The docker image can be built by cloning this repository and running `make build`

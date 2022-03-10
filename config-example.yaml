@@ -1,0 +1,9 @@
+---
+host: 127.0.0.1
+port: 4000
+vaxiin_server_url: "http://localhost:5000"
+heartbeat_interval: 60
+uid: 
+ipmi_ip:
+model:
+#creds_name: default
