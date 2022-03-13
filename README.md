@@ -41,7 +41,7 @@ Download the sample configuration file locally
 ```
 wget https://raw.githubusercontent.com/rebootoio/vaxiin-agent/main/config-example.yaml -O config.yaml
 ```
-Edit the file, change the `vaxiin_server_url` (if needed), add values for (`uid`, `ipmi_ip`, `model`) and run the server
+Edit the file, change the `vaxiin_server_url` (if needed), add values for (`uid`, `ipmi_ip`, `model`) and run the agent
 ```
 docker run -d -v $(pwd)/config.yaml:/etc/vaxiin-agent-config/config.yaml rebooto/vaxiin-agent
 ```
