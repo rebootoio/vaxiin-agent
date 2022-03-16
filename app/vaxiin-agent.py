@@ -7,6 +7,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from config import configure_app, configure_logging
 import helpers.heartbeat as heartbeat_helper
 from routes.heartbeat import Heartbeat
+from routes.version import Version
 
 
 default_path = '/v1/agent'
@@ -17,6 +18,7 @@ def create_app():
     api = Api(app)
 
     api.add_resource(Heartbeat, default_path + '/heartbeat')
+    api.add_resource(Version, '/version')
 
     return app
 
